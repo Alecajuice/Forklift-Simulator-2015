@@ -2,43 +2,50 @@ package graphics;
 
 public class Vector {
 
-	private int xMag;
-	private int yMag;
-	private int zMag;
+	private int x;
+	private int y;
+	private int z;
 	
 	public Vector() {
-		xMag = 0;
-		yMag = 0;
-		zMag = 0;
+		this.x = 0;
+		this.y = 0;
+		this.z = 0;
 	}
 	
 	public Vector(int x, int y, int z) {
-		xMag = x;
-		yMag = y;
-		zMag = z;
+		this.x = x;
+		this.y = y;
+		this.z = z;
 	}
 
-	public int getxMag() {
-		return xMag;
+	public int getX() {
+		return x;
 	}
 
-	public void setxMag(int xMag) {
-		this.xMag = xMag;
+	public void setX(int x) {
+		this.x = x;
 	}
 
-	public int getyMag() {
-		return yMag;
+	public int getY() {
+		return y;
 	}
 
-	public void setyMag(int yMag) {
-		this.yMag = yMag;
+	public void setY(int y) {
+		this.y = y;
 	}
 
-	public int getzMag() {
-		return zMag;
+	public int getZ() {
+		return z;
 	}
 
-	public void setzMag(int zMag) {
-		this.zMag = zMag;
+	public void setZ(int z) {
+		this.z = z;
+	}
+	
+	public Vector addV(Vector v) {
+		return new Vector(x+v.getX(), y+v.getY(), z+getZ());
+	}
+	public Vector subVector(Vector v) {
+		return new Vector(x-v.getX(), y-v.getY(), z-v.getZ());
 	}
 }

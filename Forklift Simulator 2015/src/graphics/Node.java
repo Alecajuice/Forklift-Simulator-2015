@@ -20,6 +20,14 @@ public class Node {
 		
 	}
 	
+	public Node(int x, int y, int z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.nodeSize = 1;
+		this.color = (Color) Color.BLACK;
+	}
+	
 	public Node() {
 		x = 0;
 		y = 0;
@@ -67,5 +75,16 @@ public class Node {
 	public void setColor(Color color) {
 		this.color = color;
 	}
-
+	
+	public Node addV(Vector v) {
+		return new Node(x+v.getX(), y+getY(), z+getZ());	
+	}
+	
+	public Node subV(Vector v) {
+		return new Node(x-v.getX(), y-getY(), z-getZ());
+	}	
+	
+	public Vector subN(Node n) {
+		return new Vector(n.getX()-x, n.getY()-y, n.getZ()-z);
+	}
 }

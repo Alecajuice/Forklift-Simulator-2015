@@ -20,6 +20,14 @@ public class Node {
 		
 	}
 	
+	public Node() {
+		x = 0;
+		y = 0;
+		z = 0;
+		nodeSize = 1;
+		color = (Color) Color.BLACK;
+	}
+	
 	public int getX() {
 		return this.x;
 	}

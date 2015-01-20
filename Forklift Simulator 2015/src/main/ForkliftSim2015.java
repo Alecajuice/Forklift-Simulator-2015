@@ -58,9 +58,16 @@ public class ForkliftSim2015 {
 
 	private void update() {
 
-		System.out.println(getMouse());
+		System.out.println(getMouseX());
 
-		
+	}
+	
+	private int getMouseX() {
+		return Mouse.getX();
+	}
+	
+	private int getMouseY() {
+		return Mouse.getY();
 	}
 
 	private void render() {

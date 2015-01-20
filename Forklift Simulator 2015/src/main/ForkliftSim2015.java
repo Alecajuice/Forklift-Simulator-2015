@@ -58,7 +58,7 @@ public class ForkliftSim2015 {
 
 	private void update() {
 
-		System.out.println(getMouse);
+		System.out.println(getMouse());
 
 		
 	}

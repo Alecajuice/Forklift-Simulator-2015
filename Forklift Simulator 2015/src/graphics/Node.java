@@ -76,15 +76,28 @@ public class Node {
 		this.color = color;
 	}
 	
+	//puts vector at end of point
 	public Node addV(Vector v) {
-		return new Node(x+v.getX(), y+getY(), z+getZ());	
+		this.x = x+v.getX();
+		this.y = y+v.getY();
+		this.z = z+v.getZ();
+		return this;	
 	}
 	
+	//puts -vector at point
 	public Node subV(Vector v) {
-		return new Node(x-v.getX(), y-getY(), z-getZ());
+		this.x = x-v.getX();
+		this.y =  y-v.getY();
+		this.z =  z-v.getZ();
+		return this;
 	}	
 	
+	//gives a Vector from this point to next point
 	public Vector subN(Node n) {
 		return new Vector(n.getX()-x, n.getY()-y, n.getZ()-z);
+	}
+	
+	public void drawN() {
+		System.out.println(x+" "+y+" "+z);
 	}
 }

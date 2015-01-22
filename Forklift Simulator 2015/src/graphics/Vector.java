@@ -42,10 +42,17 @@ public class Vector {
 		this.z = z;
 	}
 	
+	//adds vector to vector?
 	public Vector addV(Vector v) {
-		return new Vector(x+v.getX(), y+v.getY(), z+getZ());
+		return new Vector(x+v.getX(), y+v.getY(), z+v.getZ());
 	}
+	
+	//subtract vector from vector
 	public Vector subVector(Vector v) {
 		return new Vector(x-v.getX(), y-v.getY(), z-v.getZ());
+	}
+	
+	public void drawV() {
+		System.out.println(x+" "+y+" "+z);
 	}
 }

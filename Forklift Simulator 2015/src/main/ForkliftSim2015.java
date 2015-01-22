@@ -22,23 +22,7 @@ public class ForkliftSim2015 {
 	public final int UPDATE_SPEED = 60;
 
 	public static void main(String[] args) {
-		Node node = new Node(1,2,1);
-		Node node2 = new Node(0,4,4);
-		Vector vector = new Vector(0,0,0);
-		Vector vector2;
-	//	node.drawN();
-	//	node2.drawN();
-		vector2 = node.subN(node2);
-		vector = vector.addV(vector2);
-
-		vector.drawV();
-
-		node.addV(vector);
-
-
-//		node2.subV(vector2);
-//		node2.drawN();
-		//new ForkliftSim2015();
+		new ForkliftSim2015();
 	}
 	
 	private ForkliftSim2015() {

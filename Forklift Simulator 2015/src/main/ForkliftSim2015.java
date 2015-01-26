@@ -5,6 +5,7 @@ import static org.lwjgl.openal.AL10.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.openal.AL10.*;
 import graphics.Node;
+import graphics.Transformations;
 import graphics.Vector;
 
 import org.lwjgl.LWJGLException;
@@ -22,7 +23,10 @@ public class ForkliftSim2015 {
 	public final int UPDATE_SPEED = 60;
 
 	public static void main(String[] args) {
-		new ForkliftSim2015();
+		//new ForkliftSim2015();
+		System.out.println(Math.toRadians(90));
+		new Vector(3,4,5).drawV();
+		Transformations.xYRot(new Vector(3,4,5), Math.toRadians(90)).drawV();
 	}
 	
 	private ForkliftSim2015() {

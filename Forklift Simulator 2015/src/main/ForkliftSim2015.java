@@ -1,6 +1,7 @@
 package main;
 
 import static org.lwjgl.opengl.GL11.*;
+
 import static org.lwjgl.openal.AL10.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.openal.AL10.*;
@@ -16,6 +17,7 @@ import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.Drawable;
 import org.lwjgl.opengl.SharedDrawable;
 
+
 public class ForkliftSim2015 {
 	
 	public final int SCREEN_WIDTH = 700;
@@ -24,9 +26,12 @@ public class ForkliftSim2015 {
 
 	public static void main(String[] args) {
 		//new ForkliftSim2015();
-		System.out.println(Math.toRadians(90));
-		new Vector(3,4,5).drawV();
-		Transformations.xYRot(new Vector(3,4,5), Math.toRadians(90)).drawV();
+		int[][] x = {{5,2,11},{9,4,14}};
+		int[][] y = {{71},{32},{43}};
+		int[][] retval = Transformations.multMatrices(x, y);
+		
+		
+		
 	}
 	
 	private ForkliftSim2015() {

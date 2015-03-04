@@ -29,7 +29,7 @@ public class Transformations {
 		return retval;
 	}
 	
-	public static void xtrans(Node node) {
+	public static void project(Node node) {
 		
 	}
 }

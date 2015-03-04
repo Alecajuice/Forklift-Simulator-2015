@@ -48,11 +48,11 @@ public class Vector {
 	}
 	
 	//subtract vector from vector
-	public Vector subVector(Vector v) {
+	public Vector subV(Vector v) {
 		return new Vector(x-v.getX(), y-v.getY(), z-v.getZ());
 	}
 	
-	public void drawV() {
+	public void drawV(Node node) {
 		System.out.println(x+" "+y+" "+z);
 	}
 }

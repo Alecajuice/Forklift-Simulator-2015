@@ -28,8 +28,4 @@ public class Transformations {
 		}
 		return retval;
 	}
-	
-	public static void project(Node node) {
-		
-	}
 }

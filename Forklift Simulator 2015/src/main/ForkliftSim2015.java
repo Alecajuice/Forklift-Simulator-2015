@@ -22,7 +22,7 @@ public class ForkliftSim2015 {
 	
 	public final int SCREEN_WIDTH = 700;
 	public final int SCREEN_HEIGHT = 700;
-	public final int UPDATE_SPEED = 60;
+	private final int UPDATE_SPEED = 60;
 
 	public static void main(String[] args) {
 		//new ForkliftSim2015();
@@ -31,7 +31,8 @@ public class ForkliftSim2015 {
 		int[][] retval = Transformations.multMatrices(x, y);
 		
 		
-		
+		jonathanzwiebelspam@gmail.com
+		palyrobotics
 	}
 	
 	private ForkliftSim2015() {
